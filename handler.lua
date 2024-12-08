@@ -23,7 +23,7 @@ local slotsCleared
 ---@type Vector
 local remainingSlots
 
----@type table<LOOTSLOT_TYPE, LootHandler>
+---@type table<LOOT_SLOT_TYPE, LootHandler>
 ---Handlers responsible for processing different types of loot slots.
 local handlers =
 {
@@ -115,7 +115,7 @@ context.plugin:registerEventListener(
       remainingSlots = new 'Vector'
 
       for index = 1, itemCount do
-        local slotInfo = backbone.getLootslotInfo (index)
+        local slotInfo = backbone.getLootSlotInfo (index)
   
         if not slotInfo.locked and slotInfo.slotType ~= ENUM.LOOT_SLOT_TYPE.NONE then
           if autoloot or (not autoloot and handlers[slotInfo.slotType](slotInfo)) then

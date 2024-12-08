@@ -3,8 +3,8 @@ local context = select(2, ...)
 
 --[[~ Updated: 2024/11/30 | Author(s): Gopher ]]
 
-backbone.onAddonLoaded (
-  'Scavenger', function ()
+context.plugin:onReady (
+  function ()
     -- local _, category = SettingsManager (context.plugin)
 
     -- category:createCheckbox {
