@@ -5,13 +5,16 @@ local context = select(2, ...)
 
 context.plugin:onReady (
   function ()
+    local manager = backbone.requestService
+      'ConfigManager' --[[@as Backbone.ConfigManager]]
+
+
+
     -- local _, category = SettingsManager (context.plugin)
 
     -- category:createCheckbox {
     --   variable = 'QUEST/LOOT_ALL', label = '?',
     --   tooltip = '?'
-      
-    --   -- TODO: replace the explicit strings with localized versions.
     -- }
   end
 )
