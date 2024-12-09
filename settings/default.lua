@@ -38,7 +38,7 @@ context.plugin:registerDefaultSettings {
     },
 
     --If enabled, fish used for cooking will be looted.
-    LOOT_FISH = true
+    LOOT_EATABLE_FISH = true
   },
 
   ---@class CurrencyLootOptions

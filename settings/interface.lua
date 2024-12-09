@@ -5,16 +5,32 @@ local context = select(2, ...)
 
 context.plugin:onReady (
   function ()
-    local manager = backbone.requestService
-      'ConfigManager' --[[@as Backbone.ConfigManager]]
+    local config = backbone.requestService (
+      'Backbone.ConfigPanel', context.plugin
+    )
 
+    config.category:createHeader ({
+      text = context.plugin:getLocalizedString 'quest/header',
+      tooltip = context.plugin:getLocalizedString 'quest/header-tooltip'
+    })
+    
+    config.category:createToggle ({
+      variable = 'QUEST/LOOT_ALL',
+      label = context.plugin:getLocalizedString 'quest/loot-all',
+      tooltip = context.plugin:getLocalizedString 'quest/loot-all-tooltip'
+    })
 
+    config.category:createHeader ({
+      text = context.plugin:getLocalizedString 'tradeskill/header',
+      tooltip = context.plugin:getLocalizedString 'tradeskill/header-tooltip'
+    })
 
-    -- local _, category = SettingsManager (context.plugin)
+    config.category:createToggle ({
+      variable = 'TRADESKILL/LOOT_EATABLE_FISH',
+      label = context.plugin:getLocalizedString 'tradeskill/loot-eatable-fish',
+      tooltip = context.plugin:getLocalizedString 'tradeskill/loot-eatable-fish-tooltip'
+    })
 
-    -- category:createCheckbox {
-    --   variable = 'QUEST/LOOT_ALL', label = '?',
-    --   tooltip = '?'
-    -- }
+    -- ...
   end
 )

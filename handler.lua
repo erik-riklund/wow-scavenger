@@ -56,7 +56,7 @@ local handlers =
       local options = context.plugin:getSetting 'TRADESKILL' --[[@as TradeskillLootOptions]]
 
       return (options.LOOTABLE_SUBTYPES[itemInfo.subtypeId] or (itemInfo.subtypeId == ENUM.TRADESKILL_SUBTYPE.COOKING
-        and backbone.isFishingLoot() and options.LOOT_FISH)) and itemInfo.quality < options.QUALITY_CAP
+        and backbone.isFishingLoot() and options.LOOT_EATABLE_FISH)) and itemInfo.quality < options.QUALITY_CAP
     end
 
     --Soulbound armor and weapons are looted based on a number of variables.
