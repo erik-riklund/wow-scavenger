@@ -15,11 +15,15 @@ local context = select(2, ...)
 --See the GNU General Public License <https://www.gnu.org/licenses/> for more details.
 
 context.plugin:registerLocalizedStrings (
-  'enUS', {
+  'enUS',
+  {
+    -- quest-related strings:
     ['quest/header'] = 'Quest items',
     ['quest/header-tooltip'] = 'Options that control how quest items are looted.',
     ['quest/loot-all'] = 'Loot all quest items',
     ['quest/loot-all-tooltip'] = 'Always loot quest items, regardless of quantity. Exclusion filters still apply.',
+
+    -- tradeskill-related strings:
     ['tradeskill/header'] = 'Tradeskill items',
     ['tradeskill/header-tooltip'] = 'Options that define the behavior for looting tradeskill items.',
     ['tradeskill/loot-eatable-fish'] = 'Loot fish used for cooking',
