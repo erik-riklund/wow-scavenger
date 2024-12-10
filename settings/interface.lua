@@ -5,34 +5,18 @@ local context = select(2, ...)
 
 context.plugin:onReady (
   function ()
-    local configPanel = backbone.requestService (
-      'Backbone.ConfigPanel', context.plugin
-    )
+    local configPanel = ConfigPanel (context.plugin)
 
-    ---
-    --- 
-    ---
+    configPanel:createHeader { label = 'quest/header', tooltip = true }
+    configPanel:createToggle {
+      setting = 'QUEST/LOOT_ALL', label = 'quest/loot-all', tooltip = true
+    }
 
-    configPanel.category:createHeader ({
-      text = context.plugin:getLocalizedString 'quest/header',
-      tooltip = context.plugin:getLocalizedString 'quest/header-tooltip'
-    })
+    configPanel:createHeader { label = 'tradeskill/header', tooltip = true }
+    configPanel:createToggle {
+      setting = 'TRADESKILL/LOOT_EATABLE_FISH', label = 'tradeskill/loot-eatable-fish', tooltip = true
+    }
+
     
-    configPanel.category:createToggle ({
-      setting = 'QUEST/LOOT_ALL',
-      label = context.plugin:getLocalizedString 'quest/loot-all',
-      tooltip = context.plugin:getLocalizedString 'quest/loot-all-tooltip'
-    })
-
-    configPanel.category:createHeader ({
-      text = context.plugin:getLocalizedString 'tradeskill/header',
-      tooltip = context.plugin:getLocalizedString 'tradeskill/header-tooltip'
-    })
-
-    configPanel.category:createToggle ({
-      setting = 'TRADESKILL/LOOT_EATABLE_FISH',
-      label = context.plugin:getLocalizedString 'tradeskill/loot-eatable-fish',
-      tooltip = context.plugin:getLocalizedString 'tradeskill/loot-eatable-fish-tooltip'
-    })
   end
 )
