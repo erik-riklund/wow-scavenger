@@ -1,0 +1,8 @@
+## Interface: 110005
+## RequiredDeps: Backbone
+## Title: Scavenger
+## Author: Gopher
+## Version: 1.0.0
+## Notes: Enhances the game experience by autolooting the boring stuff.
+
+addon.lua
