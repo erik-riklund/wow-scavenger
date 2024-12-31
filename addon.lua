@@ -12,5 +12,3 @@
 
 local addon = backbone.registerAddon 'Scavenger'
 addon:createPublicChannel('LOOT_PROCESSED')
-
-

@@ -1,5 +1,8 @@
 ## Interface: 110005
 ## RequiredDeps: Backbone
+## LoadOnDemand: 1
+## X-Load-OnEvent: LOOT_READY
+
 ## Title: Scavenger
 ## Author: Gopher
 ## Version: 1.0.0
