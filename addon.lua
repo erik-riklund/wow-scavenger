@@ -1,6 +1,9 @@
---[[~ Updated: 2024/12/28 | Author(s): Gopher ]]
+---@class __scavenger
+local context = select(2, ...)
+
+--[[~ Updated: 2025/01/01 | Author(s): Gopher ]]
 --
--- Scavenger - An enhanced autoloot addon for "Turtle WoW".
+-- Scavenger - An autoloot addon for World of Warcraft.
 --
 --This program is free software: you can redistribute it and/or modify it under the terms
 --of the GNU General Public License as published by the Free Software Foundation, either
@@ -10,5 +13,23 @@
 --without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 --See the GNU General Public License <https://www.gnu.org/licenses/> for more details.
 
-local addon = backbone.registerAddon 'Scavenger'
-addon:createPublicChannel('LOOT_PROCESSED')
+---
+---!
+---
+context.addon = backbone.registerAddon 'Scavenger'
+
+---
+---This channel is used to notify any listeners that the autoloot process is complete.
+---It passes a payload consisting of an array with the loot slots that were not looted.
+---
+context.addon:createPublicChannel 'LOOT_PROCESSED'
+
+---
+---!
+---
+---@type array<fun(): boolean>
+---
+local handlers =
+{
+
+}

@@ -8,4 +8,7 @@
 ## Version: 1.0.0
 ## Notes: Enhances the game experience by autolooting the boring stuff.
 
+filters/loot.lua
+filters/ignore.lua
 addon.lua
+settings.lua
