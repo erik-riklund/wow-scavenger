@@ -16,7 +16,7 @@ local context = select(2, ...)
 ---
 ---!
 ---
----@type array<number>
+---@type number[]
 ---
 context.loot =
 {

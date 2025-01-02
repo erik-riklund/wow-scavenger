@@ -27,7 +27,12 @@ context.addon:createPublicChannel 'LOOT_PROCESSED'
 ---
 ---!
 ---
----@type array<fun(): boolean>
+local itemService = backbone.requestService 'backbone.item-service'
+
+---
+---!
+---
+---@type (fun(): boolean)[]
 ---
 local handlers =
 {
