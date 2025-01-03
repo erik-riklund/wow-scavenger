@@ -19,61 +19,54 @@ local REAGENT_TYPE = BNUM.REAGENT_TYPE
 ---
 ---!
 ---
+context.addon:setDefaultSettings(
+  {
+    ---@class scavenger.quest-settings
+    quest = {
+      loot_all = false
+    },
 
+    ---@class scavenger.reagent-settings
+    reagents =
+    {
+      loot_fish = true,
+      quality_cap = ITEM_QUALITY.RARE,
 
--- context.addon:setDefaultSettings(
---   {
---     ---@class scavenger.quest-settings
---     quest = { loot_all = false },
+      ---@type number[]
+      lootable_subtypes = {
+        REAGENT_TYPE.DUST,
+        REAGENT_TYPE.HERB,
+        REAGENT_TYPE.PIGMENT,
+        REAGENT_TYPE.LEATHER,
+        REAGENT_TYPE.METAL
+      }
+    },
 
---     ---@class scavenger.reagent-settings
---     reagents =
---     {
---       loot_fish = true,
---       quality_cap = ITEM_QUALITY.RARE,
+    ---@class scavenger.currency-settings
+    currency = {
+      loot_coins = true,
+      gold_threshold = 50,
+      loot_currencies = true
+    },
 
---       ---@type number[]
---       lootable_subtypes =
---       {
---         REAGENT_TYPE.DUST,
---         REAGENT_TYPE.HERB,
---         REAGENT_TYPE.PIGMENT,
---         REAGENT_TYPE.LEATHER,
---         REAGENT_TYPE.METAL
---       }
---     },
+    ---@class scavenger.junk-settings
+    junk = {
+      minimum_value = 100,
+      maximum_value = 99999
+    },
 
---     ---@class scavenger.currency-settings
---     currency =
---     {
---       loot_coins = true,
---       gold_threshold = 50,
---       loot_currencies = true
---     },
+    ---@class scavenger.gear-settings
+    gear = {
+      enabled = true,
+      required_player_level = 60,
+      only_known = true,
+      current_expansion = false
+    },
 
---     ---@class scavenger.junk-settings
---     junk =
---     {
---       minimum_value = 100,
---       maximum_value = 99999
---     },
-
---     ---@class scavenger.gear-settings
---     gear =
---     {
---       enabled = true,
---       required_player_level = 60,
---       only_known = true,
---       current_expansion = false
---     },
-
---     ---@class scavenger.loot-filters
---     filters =
---     {
---       loot = context.loot,
---       ignore = context.ignore
---     }
---   }
--- )
-
--- TODO: implement interface panel integration.
+    ---@class scavenger.loot-filters
+    filters = {
+      loot = context.loot,
+      ignore = context.ignore
+    }
+  }
+)

@@ -20,7 +20,7 @@ local context = select(2, ...)
 ---
 context.ignore =
 {
-  -- Classic
+  -- Classic --
 
   8150,    -- Deeprock Salt
   15417,   -- Devilsaur Leather
@@ -34,7 +34,7 @@ context.ignore =
   5785,    -- Thick Murloc Scale
   15419,   -- Warbear Leather
 
-  -- The Burning Crusade
+  -- The Burning Crusade --
 
   25707,   -- Fel Hide
 
@@ -42,13 +42,13 @@ context.ignore =
 
   36908,   -- Frost Lotus
 
-  -- Legion
+  -- Legion --
   
   124116,  -- Felhide
   124106,  -- Felwort
   124444,  -- Infernal Brimstone
 
-  -- Dragonflight
+  -- Dragonflight --
   
   193258,  -- Fire-Infused Hide
   201406,  -- Glowing Titan Orb
@@ -58,7 +58,7 @@ context.ignore =
   201405,  -- Tuft of Primal Wool
   193256,  -- Windsong Plumage
 
-  -- The War Within
+  -- The War Within --
 
   218338,  -- Bottled Storm
   218339,  -- Burning Cinderbee Setae

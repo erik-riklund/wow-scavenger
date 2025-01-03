@@ -20,7 +20,7 @@ local context = select(2, ...)
 ---
 context.loot =
 {
-  -- Classic
+  -- Classic --
 
   6522,    -- Deviate Fish
   6359,    -- Firefin Snapper
@@ -30,7 +30,7 @@ context.loot =
   13422,   -- Stonescale Eel
   58899,   -- Violet Perch (quest item)
 
-  -- The Burning Crusade
+  -- The Burning Crusade --
 
   22572,   -- Mote of Air
   22573,   -- Mote of Earth
@@ -40,7 +40,7 @@ context.loot =
   22577,   -- Mote of Shadow
   22578,   -- Mote of Water
 
-  -- Wrath of the Lich King
+  -- Wrath of the Lich King --
 
   52027,   -- Conqueror's Mark of Sanctification
   52030,   -- Conqueror's Mark of Sanctification (heroic)
@@ -55,7 +55,7 @@ context.loot =
   52025,   -- Vanquisher's Mark of Sanctification
   52028,   -- Vanquisher's Mark of Sanctification (heroic)
 
-  -- Cataclysm
+  -- Cataclysm --
 
   52328,   -- Volatile Air
   52327,   -- Volatile Earth
@@ -63,11 +63,11 @@ context.loot =
   52329,   -- Volatile Life
   52326,   -- Volatile Water
 
-  -- Warlords of Draenor
+  -- Warlords of Draenor --
 
   120945,  -- Primal Spirit
 
-  -- Legion
+  -- Legion --
 
   137677,  -- Fel Blood (quest item)
   129894,  -- Stormscale Spark (quest item)
@@ -75,7 +75,7 @@ context.loot =
   124439,  -- Unbroken Tooth
   129888,  -- Undivided Hide (quest item)
 
-  -- Shadowlands
+  -- Shadowlands --
 
   189864,  -- Anima Gossamer
   186204,  -- Anima-Stained Glass Shards
@@ -110,7 +110,7 @@ context.loot =
   186202,  -- Wafting Koricone
   181643,  -- Weeping Corpseshroom
 
-  -- Dragonflight
+  -- Dragonflight --
 
   202071,  -- Elemental Mote
   202070,  -- Exceptional Pelt
@@ -134,7 +134,7 @@ context.loot =
   200222,  -- White Bell Pigment
   192636,  -- Woolly Mountain Pelt
 
-  -- The War Within
+  -- The War Within --
 
   232047,  -- Chunk of Companion Experience (common)
   220737,  -- Storm Spirit (quest item)

@@ -27,7 +27,7 @@ context.addon:createPublicChannel 'LOOT_PROCESSED'
 ---
 ---!
 ---
-local itemService = backbone.requestService 'backbone.item-service'
+local itemHandler = backbone.requestService 'backbone.item-handler'
 
 ---
 ---!
